@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Undress Runways</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+				slidesNavigation: true,
+			});
+		});
+	</script>
+  </head>
+
+  <body class="home">
+  
+    <header>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+    </header>
+    
+    <div class="menu">
+      <ul>
+        <a href="#"><li>DESIGNERS</li></a>
+        <a href="#"><li>HAIR & MAKEUP</li></a>
+        <a href="#"><li>PROGRAM & TICKETS</li></a>
+        <a href="#"><li>UPDATES</li></a>
+        <a href="#"><li>FUTURE OF FASHION</li></a>
+        <a href="#"><li>PARTNERS</li></a>
+      </ul>
+    </div> 
+    
+     <a href="questionaire.html"><button class="questionaire">	&#81;</button></a>
+    
+   
+    <script>
+  $( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+</script>
+  </body>
+</html>
